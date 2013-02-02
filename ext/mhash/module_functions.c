@@ -54,7 +54,7 @@ VALUE mhash_rb_tiger192(VALUE self, VALUE data_to_hash)
   return (mhash_rb_digest(self, INT2NUM(7), data_to_hash));
 }
 
-VALUE mhash_rb_ghost(VALUE self, VALUE data_to_hash)
+VALUE mhash_rb_gost(VALUE self, VALUE data_to_hash)
 {
   return (mhash_rb_digest(self, INT2NUM(8), data_to_hash));
 }

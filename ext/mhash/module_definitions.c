@@ -10,7 +10,7 @@ void mhash_define_consts(VALUE *m_mhash)
   rb_define_const(*m_mhash, "MHASH_HAVAL256", INT2NUM(3));
   rb_define_const(*m_mhash, "MHASH_RIPEMD160", INT2NUM(5));
   rb_define_const(*m_mhash, "MHASH_TIGER192", INT2NUM(7));
-  rb_define_const(*m_mhash, "MHASH_GHOST", INT2NUM(8));
+  rb_define_const(*m_mhash, "MHASH_GOST", INT2NUM(8));
   rb_define_const(*m_mhash, "MHASH_CRC32B", INT2NUM(9));
   rb_define_const(*m_mhash, "MHASH_HAVAL224", INT2NUM(10));
   rb_define_const(*m_mhash, "MHASH_HAVAL192", INT2NUM(11));
@@ -40,7 +40,7 @@ void mhash_define_functions(VALUE *m_mhash)
   rb_define_module_function(*m_mhash, "haval256", mhash_rb_haval256, 1);
   rb_define_module_function(*m_mhash, "ripemd160", mhash_rb_ripemd160, 1);
   rb_define_module_function(*m_mhash, "tiger192", mhash_rb_tiger192, 1);
-  rb_define_module_function(*m_mhash, "ghost", mhash_rb_ghost, 1);
+  rb_define_module_function(*m_mhash, "gost", mhash_rb_gost, 1);
   rb_define_module_function(*m_mhash, "crc32b", mhash_rb_crc32b, 1);
   rb_define_module_function(*m_mhash, "haval224", mhash_rb_haval224, 1);
   rb_define_module_function(*m_mhash, "haval192", mhash_rb_haval192, 1);

@@ -9,7 +9,7 @@
   VALUE mhash_rb_haval256(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_ripemd160(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_tiger192(VALUE self, VALUE data_to_hash);
-  VALUE mhash_rb_ghost(VALUE self, VALUE data_to_hash);
+  VALUE mhash_rb_gost(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_crc32b(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_haval224(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_haval192(VALUE self, VALUE data_to_hash);
