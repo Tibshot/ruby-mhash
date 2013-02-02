@@ -8,7 +8,7 @@ class TestMhash < Test::Unit::TestCase
     end
 
     def test_gost_hash
-        hash = Mhash.ghost(@data)
+        hash = Mhash.gost(@data)
         valid_digest = 'a2c0810ccbb997eb2e029e7e4186535ef4efae43fdcb49afb4933303f649f8db'
         assert_equal(valid_digest, hash.unpack("H*").first)
     end
