@@ -4,16 +4,16 @@ Mhash wrapping library for Ruby.
 
 ## Requirements
 
-You need mhash libray installed too
+You need mhash libray installed.
 
 ### Debian/Ubuntu
 
-  $ sudo apt-get install libmhash-dev
+    $ sudo apt-get install libmhash-dev
 
 ### FreeBSD (using ports)
 
-  # cd /usr/ports/security/mhash
-  # make install
+    # cd /usr/ports/security/mhash
+    # make install
 
 ### Rubies
 
