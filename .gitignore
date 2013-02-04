@@ -4,3 +4,4 @@ ext/**/*.log
 ext/mhash/Makefile
 *.gem
 *.lock
+*.swp
