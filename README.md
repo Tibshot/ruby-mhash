@@ -80,6 +80,18 @@ Mhash's module functions are explicit...
 
 ```
 
+At this time, these functions return byte encoded string but if you want an hexdigest, you can do this:
+
+```ruby
+
+require 'mhash'
+
+hash = Mhash.gost("this is a test !").unpack("H*").first
+
+```
+
+In the next release of mhash gem, you will be able to get hexdigest directly.
+
 ## Want a feature ? Problem ?
 
 Open an issue ;)
