@@ -1,13 +1,11 @@
 #include <ruby.h>
 #include <mhash.h>
+#include "mhash_ruby.h"
 #include "module_definitions.h"
-
-void Init_mhash();
-static VALUE m_mhash;
 
 void Init_mhash()
 {
-  static VALUE m_hash;
+  VALUE m_mhash;
 
   m_mhash = rb_define_module("Mhash");
 
