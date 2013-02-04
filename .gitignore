@@ -1,5 +1,6 @@
 ext/**/*.so
 ext/**/*.o
 ext/**/*.log
+ext/mhash/Makefile
 *.gem
 *.lock
