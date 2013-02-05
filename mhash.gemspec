@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.files = `git ls-files`.split("\n")
   gem.extensions = ["ext/mhash/extconf.rb"]
   gem.require_paths = ["lib", "ext"]
-  gem.version = "1.0"
+  gem.version = "1.1"
   gem.extra_rdoc_files = ["LICENSE.txt"]
   gem.licenses = ["BSD"]
 end
