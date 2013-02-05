@@ -45,52 +45,61 @@ or for development:
 
 Just require mhash library and go !
 
-Mhash's module functions are explicit...
+These are implemented hashes:
+
+* gost
+* crc32
+* md5
+* sha1
+* haval256
+* ripemd160
+* tiger192
+* gost
+* crc32b
+* haval224
+* haval192
+* haval160
+* haval128
+* tiger128
+* tiger160
+* sha256
+* adler32
+* sha224
+* sha512
+* sha384
+* whirlpool
+* ripemd128
+* ripemd256
+* ripemd320
+* snefru128
+* snefru256
+
+If you just want to have a nibble digest:
 
 ```ruby
 
 require 'mhash'
 
-Mhash.gost("this is a test !")
-Mhash.crc32("this is a test !")
-Mhash.md5("this is a test !")
-Mhash.sha1("this is a test !")
-Mhash.haval256("this is a test !")
-Mhash.ripemd160("this is a test !")
-Mhash.tiger192("this is a test !")
-Mhash.gost("this is a test !")
-Mhash.crc32b("this is a test !")
-Mhash.haval224("this is a test !")
-Mhash.haval192("this is a test !")
-Mhash.haval160("this is a test !")
-Mhash.haval128("this is a test !")
-Mhash.tiger128("this is a test !")
-Mhash.tiger160("this is a test !")
-Mhash.sha256("this is a test !")
-Mhash.adler32("this is a test !")
-Mhash.sha224("this is a test !")
-Mhash.sha512("this is a test !")
-Mhash.sha384("this is a test !")
-Mhash.whirlpool("this is a test !")
-Mhash.ripemd128("this is a test !")
-Mhash.ripemd256("this is a test !")
-Mhash.ripemd320("this is a test !")
-Mhash.snefru128("this is a test !")
-Mhash.snefru256("this is a test !")
-
+hash = Mhash.gost("Hello\n\n")
+puts hash
+=> "\x89\r\x02\xF9*\xF7\xD7V\x82\xD4\xC3\x15\xEC\xA2\xF5\x8E~\x9E\xD0\x8D\xFC\xF1\xC0O\xC4\x16\xB0HOE\x1D\x8D"
 ```
 
-At this time, these functions return byte encoded string but if you want an hexdigest, you can do this:
+If you want an hexdigest:
 
 ```ruby
 
 require 'mhash'
 
-hash = Mhash.gost("this is a test !").unpack("H*").first
-
+# Using gost nibble digest as previously:
+hash = Mhash.gost("Hello\n\n").unpack("H*").first
+puts hash
+=> "890d02f92af7d75682d4c315eca2f58e7e9ed08dfcf1c04fc416b0484f451d8d"
+# Using ! methods:
+hash = Mhash.gost!("Hello\n\n")
+puts hash
+=> "890d02f92af7d75682d4c315eca2f58e7e9ed08dfcf1c04fc416b0484f451d8d"
 ```
-
-In the next release of mhash gem, you will be able to get hexdigest directly.
 
 ## Want a feature ? Problem ?
 
