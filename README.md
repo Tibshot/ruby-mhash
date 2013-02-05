@@ -30,7 +30,11 @@ You have to setup rubygems.
 
     gem install mhash
 
-or for development:
+or in Gemfile (Bundler):
+
+    gem 'mhash'
+
+## Development/Debug
 
     git clone https://github.com/TibshoOT/ruby-mhash.git
     cd ruby-mhash/etx/mhash
@@ -39,6 +43,7 @@ or for development:
     make
     irb -r ./mhash.so
     [test it !]
+    [pull request]
 
 
 ## Documentation
