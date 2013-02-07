@@ -48,36 +48,157 @@ or in Gemfile (Bundler):
 
 ## Documentation
 
-Just require mhash library and go !
+These are implemented hashes with their methods:
 
-These are implemented hashes:
+<table>
+<tr>
+  <th>Cipher (Mhash contanst)</th>
+  <th>digest method</th>
+  <th>hexdigest method</th>
+</tr>
+<tr>
+  <th>CRC32</th>
+  <td>Mhash.crc32("a simple test !")</td>
+  <td>Mhash.crc32!("a simple test !")</td>
+</tr>
+<tr>
+  <th>MD5</th>
+  <td>Mhash.md5("a simple test !")</td>
+  <td>Mhash.md5!("a simple test !")</td>
+</tr>
+<tr>
+  <th>SHA1</th>
+  <td>Mhash.sha1("a simple test !")</td>
+  <td>Mhash.sha1!("a simple test !")</td>
+</tr>
+<tr>
+  <th>HAVAL256</th>
+  <td>Mhash.haval256("a simple test !")</td>
+  <td>Mhash.haval256!("a simple test !")</td>
+</tr>
+<tr>
+  <th>RIPEMD160</th>
+  <td>Mhash.ripemd160("a simple test !")</td>
+  <td>Mhash.ripemd160!("a simple test !")</td>
+</tr>
+<tr>
+  <th>TIGER192</th>
+  <td>Mhash.tiger192("a simple test !")</td>
+  <td>Mhash.tiger192!("a simple test !")</td>
+</tr>
+<tr>
+  <th>GOST</th>
+  <td>Mhash.gost("a simple test !")</td>
+  <td>Mhash.gost!("a simple test !")</td>
+</tr>
+<tr>
+  <th>CRC32B</th>
+  <td>Mhash.crc32b("a simple test !")</td>
+  <td>Mhash.crc32b!("a simple test !")</td>
+</tr>
+<tr>
+  <th>HAVAL224</th>
+  <td>Mhash.haval224("a simple test !")</td>
+  <td>Mhash.haval224!("a simple test !")</td>
+</tr>
+<tr>
+  <th>HAVAL192</th>
+  <td>Mhash.haval192("a simple test !")</td>
+  <td>Mhash.haval192!("a simple test !")</td>
+</tr>
+<tr>
+  <th>HAVAL160</th>
+  <td>Mhash.haval160("a simple test !")</td>
+  <td>Mhash.haval160!("a simple test !")</td>
+</tr>
+<tr>
+  <th>HAVAL128</th>
+  <td>Mhash.haval128("a simple test !")</td>
+  <td>Mhash.haval128!("a simple test !")</td>
+</tr>
+<tr>
+  <th>TIGER128</th>
+  <td>Mhash.tiger128("a simple test !")</td>
+  <td>Mhash.tiger128!("a simple test !")</td>
+</tr>
+<tr>
+  <th>TIGER160</th>
+  <td>Mhash.tiger160("a simple test !")</td>
+  <td>Mhash.tiger160!("a simple test !")</td>
+</tr>
+<tr>
+  <th>SHA256</th>
+  <td>Mhash.sha256("a simple test !")</td>
+  <td>Mhash.sha256!("a simple test !")</td>
+</tr>
+<tr>
+  <th>ADLER32</th>
+  <td>Mhash.adler32("a simple test !")</td>
+  <td>Mhash.adler32!("a simple test !")</td>
+</tr>
+<tr>
+  <th>SHA224</th>
+  <td>Mhash.sha224("a simple test !")</td>
+  <td>Mhash.sha224!("a simple test !")</td>
+</tr>
+<tr>
+  <th>SHA512</th>
+  <td>Mhash.sha512("a simple test !")</td>
+  <td>Mhash.sha512!("a simple test !")</td>
+</tr>
+<tr>
+  <th>SHA384</th>
+  <td>Mhash.sha384("a simple test !")</td>
+  <td>Mhash.sha384!("a simple test !")</td>
+</tr>
+<tr>
+  <th>WHIRLPOOL</th>
+  <td>Mhash.whirlpool("a simple test !")</td>
+  <td>Mhash.whirlpool!("a simple test !")</td>
+</tr>
+<tr>
+  <th>RIPEMD128</th>
+  <td>Mhash.ripemd128("a simple test !")</td>
+  <td>Mhash.ripemd128!("a simple test !")</td>
+</tr>
+<tr>
+  <th>RIPEMD256</th>
+  <td>Mhash.ripemd256("a simple test !")</td>
+  <td>Mhash.ripemd256!("a simple test !")</td>
+</tr>
+<tr>
+  <th>RIPEMD320</th>
+  <td>Mhash.ripemd320("a simple test !")</td>
+  <td>Mhash.ripemd320!("a simple test !")</td>
+</tr>
+<tr>
+  <th>SNEFRU128</th>
+  <td>Mhash.snefru128("a simple test !")</td>
+  <td>Mhash.snefru128!("a simple test !")</td>
+</tr>
+<tr>
+  <th>SNEFRU256</th>
+  <td>Mhash.snefru256("a simple test !")</td>
+  <td>Mhash.snefru256!("a simple test !")</td>
+</tr>
+</table>
 
-* gost
-* crc32
-* md5
-* sha1
-* haval256
-* ripemd160
-* tiger192
-* gost
-* crc32b
-* haval224
-* haval192
-* haval160
-* haval128
-* tiger128
-* tiger160
-* sha256
-* adler32
-* sha224
-* sha512
-* sha384
-* whirlpool
-* ripemd128
-* ripemd256
-* ripemd320
-* snefru128
-* snefru256
+### Examples
+
+You can find all available hashes doing this:
+
+```ruby
+
+require 'mhash'
+
+Mhash.constant
+=> [:MHASH_CRC32, :MHASH_MD5, :MHASH_SHA1, :MHASH_HAVAL256, :MHASH_RIPEMD160,
+    :MHASH_TIGER192, :MHASH_GOST, :MHASH_CRC32B, :MHASH_HAVAL224, :MHASH_HAVAL192,
+    :MHASH_HAVAL160, :MHASH_HAVAL128, :MHASH_TIGER128, :MHASH_TIGER160, :MHASH_SHA256,
+    :MHASH_ADLER32, :MHASH_SHA224, :MHASH_SHA512, :MHASH_SHA384, :MHASH_WHIRLPOOL,
+    :MHASH_RIPEMD128, :MHASH_RIPEMD256, :MHASH_RIPEMD320, :MHASH_SNEFRU128,
+    :MHASH_SNEFRU256, :VERSION]
+```
 
 If you just want to have a nibble digest:
 
