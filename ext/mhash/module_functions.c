@@ -61,7 +61,6 @@ VALUE mhash_rb_crc32_hex(VALUE self, VALUE data_to_hash)
     return (hash);
 }
 
-
 VALUE mhash_rb_md5(VALUE self, VALUE data_to_hash)
 {
   return (mhash_rb_digest(self, INT2NUM(1), data_to_hash));
@@ -75,7 +74,6 @@ VALUE mhash_rb_md5_hex(VALUE self, VALUE data_to_hash)
                             data_to_hash));
   return (hash);
 }
-
 
 VALUE mhash_rb_sha1(VALUE self, VALUE data_to_hash)
 {
@@ -161,6 +159,7 @@ VALUE mhash_rb_crc32b_hex(VALUE self, VALUE data_to_hash)
                             data_to_hash));
   return (hash);
 }
+
 VALUE mhash_rb_haval224(VALUE self, VALUE data_to_hash)
 {
   return (mhash_rb_digest(self, INT2NUM(10), data_to_hash));
@@ -241,6 +240,20 @@ VALUE mhash_rb_tiger160_hex(VALUE self, VALUE data_to_hash)
   VALUE hash;
 
   hash = mhash_rb_hexdigest(self, mhash_rb_digest(self, INT2NUM(15),
+                            data_to_hash));
+  return (hash);
+}
+
+VALUE mhash_rb_md4(VALUE self, VALUE data_to_hash)
+{
+  return (mhash_rb_digest(self, INT2NUM(16), data_to_hash));
+}
+
+VALUE mhash_rb_md4_hex(VALUE self, VALUE data_to_hash)
+{
+  VALUE hash;
+
+  hash = mhash_rb_hexdigest(self, mhash_rb_digest(self, INT2NUM(16),
                             data_to_hash));
   return (hash);
 }
@@ -395,6 +408,20 @@ VALUE mhash_rb_snefru256_hex(VALUE self, VALUE data_to_hash)
   VALUE hash;
 
   hash = mhash_rb_hexdigest(self, mhash_rb_digest(self, INT2NUM(27),
+                            data_to_hash));
+  return (hash);
+}
+
+VALUE mhash_rb_md2(VALUE self, VALUE data_to_hash)
+{
+  return (mhash_rb_digest(self, INT2NUM(28), data_to_hash));
+}
+
+VALUE mhash_rb_md2_hex(VALUE self, VALUE data_to_hash)
+{
+  VALUE hash;
+
+  hash = mhash_rb_hexdigest(self, mhash_rb_digest(self, INT2NUM(28),
                             data_to_hash));
   return (hash);
 }

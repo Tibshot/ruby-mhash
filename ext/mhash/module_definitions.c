@@ -18,6 +18,7 @@ void mhash_define_consts(VALUE *m_mhash)
   rb_define_const(*m_mhash, "MHASH_HAVAL128", INT2NUM(13));
   rb_define_const(*m_mhash, "MHASH_TIGER128", INT2NUM(14));
   rb_define_const(*m_mhash, "MHASH_TIGER160", INT2NUM(15));
+  rb_define_const(*m_mhash, "MHASH_MD4", INT2NUM(16));
   rb_define_const(*m_mhash, "MHASH_SHA256", INT2NUM(17));
   rb_define_const(*m_mhash, "MHASH_ADLER32", INT2NUM(18));
   rb_define_const(*m_mhash, "MHASH_SHA224", INT2NUM(19));
@@ -29,6 +30,7 @@ void mhash_define_consts(VALUE *m_mhash)
   rb_define_const(*m_mhash, "MHASH_RIPEMD320", INT2NUM(25));
   rb_define_const(*m_mhash, "MHASH_SNEFRU128", INT2NUM(26));
   rb_define_const(*m_mhash, "MHASH_SNEFRU256", INT2NUM(27));
+  rb_define_const(*m_mhash, "MHASH_MD2", INT2NUM(28));
 }
 
 void mhash_define_functions(VALUE *m_mhash)
@@ -63,6 +65,8 @@ void mhash_define_functions(VALUE *m_mhash)
   rb_define_module_function(*m_mhash, "tiger128!", mhash_rb_tiger128_hex, 1);
   rb_define_module_function(*m_mhash, "tiger160", mhash_rb_tiger160, 1);
   rb_define_module_function(*m_mhash, "tiger160!", mhash_rb_tiger160_hex, 1);
+  rb_define_module_function(*m_mhash, "md4", mhash_rb_md4, 1);
+  rb_define_module_function(*m_mhash, "md4!", mhash_rb_md4_hex, 1);
   rb_define_module_function(*m_mhash, "sha256", mhash_rb_sha256, 1);
   rb_define_module_function(*m_mhash, "sha256!", mhash_rb_sha256_hex, 1);
   rb_define_module_function(*m_mhash, "adler32", mhash_rb_adler32, 1);
@@ -85,4 +89,6 @@ void mhash_define_functions(VALUE *m_mhash)
   rb_define_module_function(*m_mhash, "snefru128!", mhash_rb_snefru128_hex, 1);
   rb_define_module_function(*m_mhash, "snefru256", mhash_rb_snefru256, 1);
   rb_define_module_function(*m_mhash, "snefru256!", mhash_rb_snefru256_hex, 1);
+  rb_define_module_function(*m_mhash, "md2", mhash_rb_md2, 1);
+  rb_define_module_function(*m_mhash, "md2!", mhash_rb_md2_hex, 1);
 }

@@ -46,6 +46,9 @@
   VALUE mhash_rb_tiger160(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_tiger160_hex(VALUE self, VALUE data_to_hash);
 
+  VALUE mhash_rb_md4(VALUE self, VALUE data_to_hash);
+  VALUE mhash_rb_md4_hex(VALUE self, VALUE data_to_hash);
+
   VALUE mhash_rb_sha256(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_sha256_hex(VALUE self, VALUE data_to_hash);
 
@@ -78,5 +81,8 @@
 
   VALUE mhash_rb_snefru256(VALUE self, VALUE data_to_hash);
   VALUE mhash_rb_snefru256_hex(VALUE self, VALUE data_to_hash);
+
+  VALUE mhash_rb_md2(VALUE self, VALUE data_to_hash);
+  VALUE mhash_rb_md2_hex(VALUE self, VALUE data_to_hash);
 
 #endif
