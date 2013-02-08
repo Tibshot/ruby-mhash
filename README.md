@@ -52,7 +52,7 @@ These are implemented hashes with their methods:
 
 <table>
 <tr>
-  <th>Cipher (Mhash contanst)</th>
+  <th>Hash name (default bit-length)</th>
   <th>digest method</th>
   <th>hexdigest method</th>
 </tr>
@@ -62,7 +62,7 @@ These are implemented hashes with their methods:
   <td>Mhash.crc32!("a simple test !")</td>
 </tr>
 <tr>
-  <th>MD5</th>
+  <th>MD5 (128)</th>
   <td>Mhash.md5("a simple test !")</td>
   <td>Mhash.md5!("a simple test !")</td>
 </tr>
@@ -87,7 +87,7 @@ These are implemented hashes with their methods:
   <td>Mhash.tiger192!("a simple test !")</td>
 </tr>
 <tr>
-  <th>GOST</th>
+  <th>GOST (512)</th>
   <td>Mhash.gost("a simple test !")</td>
   <td>Mhash.gost!("a simple test !")</td>
 </tr>
@@ -127,7 +127,7 @@ These are implemented hashes with their methods:
   <td>Mhash.tiger160!("a simple test !")</td>
 </tr>
 <tr>
-  <th>MD4</th>
+  <th>MD4 (128)</th>
   <td>Mhash.md4("a simple test !")</td>
   <td>Mhash.md4!("a simple test !")</td>
 </tr>
@@ -157,7 +157,7 @@ These are implemented hashes with their methods:
   <td>Mhash.sha384!("a simple test !")</td>
 </tr>
 <tr>
-  <th>WHIRLPOOL</th>
+  <th>WHIRLPOOL (512)</th>
   <td>Mhash.whirlpool("a simple test !")</td>
   <td>Mhash.whirlpool!("a simple test !")</td>
 </tr>
@@ -187,7 +187,7 @@ These are implemented hashes with their methods:
   <td>Mhash.snefru256!("a simple test !")</td>
 </tr>
 <tr>
-  <th>MD2</th>
+  <th>MD2 (128)</th>
   <td>Mhash.md2("a simple test !")</td>
   <td>Mhash.md2!("a simple test !")</td>
 </tr>
