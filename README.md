@@ -1,6 +1,6 @@
 # ruby-mhash [![Build Status](https://travis-ci.org/TibshoOT/ruby-mhash.png?branch=master)](https://travis-ci.org/TibshoOT/ruby-mhash)
 
-Mhash wrapping library for Ruby.
+[Mhash library](http://mhash.sourceforge.net/) wrapper for Ruby.
 
 ## Requirements
 
@@ -127,6 +127,11 @@ These are implemented hashes with their methods:
   <td>Mhash.tiger160!("a simple test !")</td>
 </tr>
 <tr>
+  <th>MD4</th>
+  <td>Mhash.md4("a simple test !")</td>
+  <td>Mhash.md4!("a simple test !")</td>
+</tr>
+<tr>
   <th>SHA256</th>
   <td>Mhash.sha256("a simple test !")</td>
   <td>Mhash.sha256!("a simple test !")</td>
@@ -181,6 +186,11 @@ These are implemented hashes with their methods:
   <td>Mhash.snefru256("a simple test !")</td>
   <td>Mhash.snefru256!("a simple test !")</td>
 </tr>
+<tr>
+  <th>MD2</th>
+  <td>Mhash.md2("a simple test !")</td>
+  <td>Mhash.md2!("a simple test !")</td>
+</tr>
 </table>
 
 ### Examples
@@ -191,13 +201,13 @@ You can find all available hashes doing this:
 
 require 'mhash'
 
-Mhash.constant
-=> [:MHASH_CRC32, :MHASH_MD5, :MHASH_SHA1, :MHASH_HAVAL256, :MHASH_RIPEMD160,
-    :MHASH_TIGER192, :MHASH_GOST, :MHASH_CRC32B, :MHASH_HAVAL224, :MHASH_HAVAL192,
-    :MHASH_HAVAL160, :MHASH_HAVAL128, :MHASH_TIGER128, :MHASH_TIGER160, :MHASH_SHA256,
-    :MHASH_ADLER32, :MHASH_SHA224, :MHASH_SHA512, :MHASH_SHA384, :MHASH_WHIRLPOOL,
-    :MHASH_RIPEMD128, :MHASH_RIPEMD256, :MHASH_RIPEMD320, :MHASH_SNEFRU128,
-    :MHASH_SNEFRU256, :VERSION]
+Mhash.constants
+ => [:MHASH_CRC32, :MHASH_MD5, :MHASH_SHA1, :MHASH_HAVAL256, :MHASH_RIPEMD160,
+     :MHASH_TIGER192, :MHASH_GOST, :MHASH_CRC32B, :MHASH_HAVAL224, :MHASH_HAVAL192,
+     :MHASH_HAVAL160, :MHASH_HAVAL128, :MHASH_TIGER128, :MHASH_TIGER160, :MHASH_MD4,
+     :MHASH_SHA256, :MHASH_ADLER32, :MHASH_SHA224, :MHASH_SHA512, :MHASH_SHA384,
+     :MHASH_WHIRLPOOL, :MHASH_RIPEMD128, :MHASH_RIPEMD256, :MHASH_RIPEMD320,
+     :MHASH_SNEFRU128, :MHASH_SNEFRU256, :MHASH_MD2, :VERSION]
 ```
 
 If you just want to have a nibble digest:
