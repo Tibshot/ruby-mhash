@@ -1,0 +1,77 @@
+test: "THIS IS A FRAKING TEXT TEST YEAH"
+
+crc32:
+  const: 0
+  py-mhash: e55807a5
+md5:
+  const: 1
+  py-mhash: 602476d22c69e2921c767484d0cb8bb5
+sha1:
+  const: 2
+  py-mhash: f1996804f8c0ce9a1f8bd8dca5c25aef97d848b4
+haval256:
+  const: 3
+  py-mhash: a424bf75d1e34ce854379672945057673c85c857a7f93bbcab6ec1355fc801be
+ripemd160:
+  const: 5
+  py-mhash: 4c29bda48119ef76633dee28a8439b3169f919ba
+tiger192:
+  const: 7
+  py-mhash: bc9351b69c67342e009794333bebe7013368126f19bf858d
+gost:
+  const: 8
+  py-mhash: fa963d328fab9f7456c97c16f4c4cd0b1a249e2b080ed7b32b1812ea075ef5e0
+crc32b:
+  const: 9
+  py-mhash: 9be52ba9
+haval224:
+  const: 10
+  py-mhash: 1ede7e37c82efc040c849d9e66d51ec3a839641540df210654e97870
+haval192:
+  const: 11
+  py-mhash: 24a88e62088bf3b93461f0a20d8d9b5f313b94b6e631d945
+haval160:
+  const: 12
+  py-mhash: f23cfa9f31f0d1db3c87b1666f9565a102a303eb
+haval128:
+  const: 13
+  py-mhash: 4f835f3645b5bfaf92b32a154abbb024
+tiger128:
+  const: 14
+  py-mhash: bc9351b69c67342e009794333bebe701
+tiger160:
+  const: 15
+  py-mhash: bc9351b69c67342e009794333bebe7013368126f
+sha256:
+  const: 17
+  py-mhash: 255e1816fcc93e8154e20b4ec67336970cddd44b81affa9f9a0fb69a22398771
+adler32:
+  const: 18
+  py-mhash: 8408148b
+sha224:
+  const: 19
+  py-mhash: 1105c6fffd7eff52ecf589f8e870a2a231031da5d68e8c940bac6a49
+sha512:
+  const: 20
+  py-mhash: 310c9b1cca32c871935e33b2a73f8ea9b44d9e6e9831a6b0625cbde36240436ca227c9c9e8f7668f9eb68f141c5f825e9ce34f4ed1358dcfb8da2d2186a14876
+sha384:
+  const: 21
+  py-mhash: f3e2c3ef85216d1e9a434a2bac0a301194a99f47fce933b9477b5d8e3efea351bf35d593de082ad065c5c583481b969e
+whirlpool:
+  const: 22
+  py-mhash: f8585edb9eaf846fc0e10dd0ee8da1c01b3376b06c097185744dbf88767078d40ed60d19e754b3bc8379b919085715f31daca3ec22224bad61f8ef8a21fb8887
+ripemd128:
+  const: 23
+  py-mhash: e399ea73e2e3bdbf02b791b8d5b97a4f
+ripemd256:
+  const: 24
+  py-mhash: e6bf4e633307d04236ada8e20ec14c22106f0bc8390f029398df84231d14e4eb
+ripemd320:
+  const: 25
+  py-mhash: 2b23e1524df36823e749b3f46876a64d4b741c043c6d14c5f42a7335ff589abda77b924843a2bae2
+snefru128:
+  const: 26
+  py-mhash: b4d4f0c1ce8cc19c7ff98a3e834033a4
+snefru256:
+  const: 27
+  py-mhash: 225b50a4c961abf30fffedee916fb66526fce240c600239ac49cf27488a1c300
